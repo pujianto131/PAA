@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class MainTsp{
-
     public static void main(String[] args) {
         
         char abjad[] = {'A','B','C', 'D', 'E', 'F','G','H','I'};
@@ -15,8 +14,8 @@ public class MainTsp{
 
         int[][] dataArr = new int[jumlahKota][jumlahKota];
         FunctionTsp mTsp = new FunctionTsp();
-        int[][] p;
-        p = mTsp.permutasi(jumlahKota);
+        int[][] permutasiArray;
+        permutasiArray = mTsp.permutasi(jumlahKota);
 
         // inputArray
         System.out.println("input jarak antar kota\n");
@@ -52,19 +51,33 @@ public class MainTsp{
             System.out.println("");
         }
 
+        System.out.println("\npermutasi");
+        for (int i = 0; i < permutasiArray.length ; i++) {
+            for (int j = 0; j <=jumlahKota; j++) {
+                if(j<1){
+                    System.out.print("  "+permutasiArray[i][j]);
+                }
+                else{
+                    System.out.print("\t"+permutasiArray[i][j]);
+                }
+            }
+            System.out.println("");
+        }
+
 
        
         System.out.print("tentukan start Kota");
         start = mScanner.next().charAt(0);
 
-        for(int i = 0; i < mTsp.factorial(jumlahKota); i++){
+        int factorial = mTsp.factorial(jumlahKota);
+        for (int i = 0; i < factorial; i++) {
             tampung = 0;
-            if(abjad[ p[i][0] ] == start){
-                mulai = p[i][0];
+            if(abjad[ permutasiArray[i][0] ] == start){
+                mulai = permutasiArray[i][0];
                 for(int j=0; j<jumlahKota; j++){
-                    if(abjad[ p[i][j] ] != start){
-                        tampung =tampung+ dataArr[mulai][ p[i][j] ];
-                        mulai = p[i][j];
+                    if(abjad[ permutasiArray[i][j] ] != start){
+                        tampung =tampung+ dataArr[mulai][ permutasiArray[i][j] ];
+                        mulai = permutasiArray[i][j];
                     }                    
                 }
                 if(tampung < kecil){
@@ -76,12 +89,14 @@ public class MainTsp{
         System.out.print("\nKombinasi Terbaik adalah: ");
         for(int i= 0; i < jumlahKota; i++){
             if(i == 0){
-                System.out.print(abjad[ p[terbaik][i]]);
+                System.out.print(abjad[ permutasiArray[terbaik][i]]);
             }
             else{
-                System.out.print("->"+abjad[ p[terbaik][i]]);
+                System.out.print("->"+abjad[ permutasiArray[terbaik][i]]);
             }
         }
         System.out.println("\nTotal Jarak : "+kecil+"\n\n");
+        mScanner.close();
     }
+    
 }
