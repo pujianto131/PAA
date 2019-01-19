@@ -1,7 +1,6 @@
  import java.util.*;
 
 public class MainTspGreedy{
-
     public static void main(String[] args) {
         char abjad[] = {'A','B','C', 'D', 'E', 'F','G','H','I'};
         int jumlahKota;
@@ -25,7 +24,6 @@ public class MainTspGreedy{
             }
             System.out.println("");
         }
-
         // print arrayKota
         for(int i=0; i<jumlahKota; i++){
             if(i<1){
@@ -47,25 +45,24 @@ public class MainTspGreedy{
             }
             System.out.println("");
         }
-
-        char start;
+        // proses TSP greedy
+        char startKota;
         System.out.print("\ntentukan nilai start: ");
-        start = mScanner.next().charAt(0);
+        startKota = mScanner.next().charAt(0);
 
-        int jalan =0;
+        boolean jalan =false;
         int lokasiStart=0,locNow=0, hapus=0, tmpStart=0;
         int jarakKota = 0, count=0;
         int[] indexStart =new int [abjad.length];
         
         for (int i = 0; i <jumlahKota; i++) {
-            if (start == abjad[i]) {
-                jalan = 1;
+            if (startKota == abjad[i]) {
+                jalan = true;
                 tmpStart=i;
                 lokasiStart=i;
             }
         }
-       
-        if (jalan == 1) {
+        if (jalan == true) {
             while (count < jumlahKota-1) {
                 int kecil = 9999;
                 hapus = lokasiStart;
@@ -87,12 +84,11 @@ public class MainTspGreedy{
                 count++;     
             } 
         }
-
         System.out.print("lokasi yg ditempuh: "+abjad[tmpStart]);
         for (int i = 0; i < count; i++) {
             System.out.print("->"+ abjad[ indexStart[i] ]);
         }
+        System.out.println("->"+abjad[tmpStart]);
         System.out.println("\nJarak yg ditempuh: "+jarakKota+"\n\n");
-
     }
 }

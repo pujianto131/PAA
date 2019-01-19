@@ -1,0 +1,38 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-BubbleSort",
+            "request": "launch",
+            "mainClass": "BubbleSort"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Karyawan",
+            "request": "launch",
+            "mainClass": "Karyawan"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MainTsp",
+            "request": "launch",
+            "mainClass": "MainTsp"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MainTspGreedy",
+            "request": "launch",
+            "mainClass": "MainTspGreedy"
+        }
+    ]
+}

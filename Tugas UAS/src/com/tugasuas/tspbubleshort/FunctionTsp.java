@@ -1,10 +1,11 @@
+package com.tugasuas.tspbubleshort;
 
-public class FunctionTsp{
+public class FunctionTsp {
     private static int x;
     String[] data = new String[x];
     private static int index = -1;
 
-    
+
     static int factorial(int n){
         if(n == 0){
             return 1;
@@ -47,14 +48,13 @@ public class FunctionTsp{
         for(int i = 0; i < jumlah; i++){
             arr[0]=arr[0] + String.valueOf(i);
         }
-        
+
         FunctionTsp mFunctionTsp = new FunctionTsp();
         arr = mFunctionTsp.execute(arr, 0, jumlah-1);
         char[] charArray;
 
         for(int i = 0; i < x; i++){
             charArray = arr[i].toCharArray();
-			// System.out.println("\ncharArray"+i+": "+charArray[i]+"\n");
             for(int j = 0; j < jumlah; j++){
                 data[i][j] = Integer.parseInt(String.valueOf(charArray[j]));
             }
