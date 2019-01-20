@@ -1,5 +1,7 @@
 package com.smt3.paa;
 
+import com.smt3.sortespath.SortesPathBellmanFord;
+
 import java.util.Scanner;
 
 public class MainTspBuble {
@@ -22,11 +24,7 @@ public class MainTspBuble {
             for (int j = 0; j < matrix.length; j++) {
                 if (i!=j && matrix[i][j]==0) {
                     System.out.print("input value ["+i+"]["+j+"] : ");
-                    matrix[i][j] = inScan.nextInt();
-                    if (matrix [i][j] == 0) {
-                        matrix[i][j] = 9999;
-                    }
-                    matrix[j][i] = matrix[i][j];
+                    SortesPathBellmanFord.inputData(matrix, i, j, inScan);
                 }
             }
         }

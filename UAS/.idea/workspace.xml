@@ -1,25 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8df8e7b0-b234-46a9-b8ac-3f302ec48667" name="Default Changelist" comment="add tugas UAS">
-      <change afterPath="$PROJECT_DIR$/../Tugas UAS/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Tugas UAS/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Tugas UAS/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Tugas UAS/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Tugas UAS/Tugas UAS.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/smt3/paa/FunctionTsp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BruteForce/tsp/FunctionTsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BruteForce/tsp/FunctionTsp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BruteForce/tsp/FunctionTsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BruteForce/tsp/FunctionTsp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BruteForce/tsp/MainTsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BruteForce/tsp/MainTsp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BruteForce/tsp/MainTsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BruteForce/tsp/MainTsp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Greedy/JadwalKaryawan/MainJd.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Greedy/JadwalKaryawan/MainJd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Greedy/JadwalKaryawan/MainJd.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Greedy/JadwalKaryawan/MainJd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Greedy/Tsp/MainTspGreedy.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Greedy/Tsp/MainTspGreedy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Greedy/Tsp/MainTspGreedy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Greedy/Tsp/MainTspGreedy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Greedy/sortestPath/SortestPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Greedy/sortestPath/SortestPath.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Greedy/sortestPath/SortestPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Greedy/sortestPath/SortestPath.java" afterDir="false" />
+    <list default="true" id="8df8e7b0-b234-46a9-b8ac-3f302ec48667" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/smt3/sortespath/Edge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/smt3/sortespath/SortesPathBellmanFord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UAS/com/smt3/paa/MainTspBuble.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/smt3/paa/MainTspBuble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/smt3/paa/MainTspBuble.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,7 +16,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/smt3/sortespath/SortesPathBellmanFord.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -47,6 +44,9 @@
         <option value="$PROJECT_DIR$/src/com/smt3/paa/Main.java" />
         <option value="$PROJECT_DIR$/src/com/smt3/paa/FunctionTsp.java" />
         <option value="$PROJECT_DIR$/src/com/smt3/paa/MainTspBuble.java" />
+        <option value="$PROJECT_DIR$/src/com/smt3/sortespath/Edge.java" />
+        <option value="$PROJECT_DIR$/src/com/smt3/sortespath/SortesPath.java" />
+        <option value="$PROJECT_DIR$/src/com/smt3/sortespath/SortesPathBellmanFord.java" />
       </list>
     </option>
   </component>
@@ -64,6 +64,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -87,7 +88,7 @@
               <item name="UAS" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="smt3" type="462c0819:PsiDirectoryNode" />
-              <item name="bublesort" type="462c0819:PsiDirectoryNode" />
+              <item name="sortespath" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="UAS" type="b2602c69:ProjectViewProjectNode" />
@@ -101,13 +102,13 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547544238836" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548002049009" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
@@ -123,7 +124,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.SortesPathBellmanFord">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.smt3.paa.MainTspBuble" />
       <module name="UAS" />
@@ -134,8 +135,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SortesPathBellmanFord" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.smt3.sortespath.SortesPathBellmanFord" />
+      <module name="UAS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.smt3.sortespath.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SortesPathBellmanFord" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -150,26 +165,35 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1547541400928</updated>
-      <workItem from="1547908110096" duration="642000" />
+      <workItem from="1547908110096" duration="1062000" />
+      <workItem from="1547909229787" duration="2894000" />
+      <workItem from="1547986418467" duration="11442000" />
     </task>
+    <task id="LOCAL-00001" summary="add tugas UAS">
+      <created>1547908784313</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1547908784313</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="642000" />
+    <option name="totallyTimeSpent" value="15398000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21538462" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.17004049" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24939272" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="0" visible="true" weight="0.3285968" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.3285968" />
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="3" weight="0.3285968" />
@@ -178,7 +202,8 @@
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Maven" order="2" />
@@ -187,9 +212,41 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
-      <window_info anchor="right" auto_hide="true" id="Run" order="8" weight="0.33846155" />
+      <window_info anchor="right" auto_hide="true" id="Run" order="8" weight="0.48502025" />
       <window_info anchor="right" id="Debug" order="9" weight="0.39919028" />
+      <window_info anchor="right" id="Database" order="10" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17004049" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.24939272" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.3285968" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.3285968" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Theme Preview" order="1" />
+      <window_info anchor="right" id="Maven" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+      <window_info anchor="right" auto_hide="true" id="Run" order="8" weight="0.38785425" />
+      <window_info anchor="right" id="Debug" order="9" weight="0.39919028" />
+      <window_info anchor="right" id="Database" order="10" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -210,6 +267,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
           <caret line="55" column="35" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/smt3/tsp/TspDvdQon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/smt3/sortespath/Edge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/smt3/sortespath/SortesPathBellmanFord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
